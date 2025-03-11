@@ -4,7 +4,7 @@
 
 > Safelyx API client
 
-Safelyx API client for Ruby. It has no dependencies.
+Safelyx API client for Ruby. 
 
 You can find the API documentation at https://safelyx.com/safe-api.
 
@@ -13,6 +13,8 @@ You can find the API documentation at https://safelyx.com/safe-api.
 1. It's simply making an HTTP request to the Safelyx API.
 
 2. It provides types for the results and for the parameters.
+
+3. If the request to the API fails (HTTP error), it will throw an error, so you might want to `rescue` it.
 
 ## Usage
 
