@@ -3,20 +3,20 @@ plugins: rubocop-rspec
 AllCops:
   NewCops: enable
 
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
 RSpec/ExampleLength:
   Enabled: false
 
-RSpec/MethodLength:
-  Enabled: false
-
-RSpec/Metrics/AbcSize:
-  Enabled: false
-
 RSpec/SpecFilePathFormat:
   Enabled: false  
-
-Style/Documentation:
-  Enabled: false

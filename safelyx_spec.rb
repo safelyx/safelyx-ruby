@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative '../safelyx'
+require_relative 'safelyx'
 
 RSpec.describe Safelyx::Client do
   let(:key_code) { ENV.fetch('TEST_KEY_CODE', nil) }

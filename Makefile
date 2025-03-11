@@ -9,7 +9,7 @@ format:
 .PHONY: test
 test:
 	bundle exec rubocop
-	bundle exec rspec
+	bundle exec rspec *_spec.rb
 
 .PHONY: build
 build:
