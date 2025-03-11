@@ -1,0 +1,17 @@
+name: Run Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '.ruby-version'
+      - env:
+          TEST_KEY_CODE: ${{ secrets.TEST_KEY_CODE }}
+        run: |
+          make install
+          make test
